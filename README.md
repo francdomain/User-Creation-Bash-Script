@@ -312,11 +312,11 @@ echo "User creation process completed. Check $LOG_FILE for details."
 ```
 __Explanation:__
 
-	-	`while IFS=';' read -r username groups; do:` Reads lines from the input file, using ; as the delimiter to separate username and groups.
-	-	`create_user "$username" "$groups":` Calls the create_user function with the username and groups as arguments.
-	-	`done < "$1":` The done keyword ends the while loop. $1 represents the first argument passed to the script, which should be the path to the input file.
-	-	`log_message "User creation process completed.":` Logs a message indicating the user creation process is complete.
-	-	`echo "User creation process completed. Check $LOG_FILE for details.":` Prints a message to the console indicating completion and directing the user to the log file for details.
+-	`while IFS=';' read -r username groups; do:` Reads lines from the input file, using ; as the delimiter to separate username and groups.
+-	`create_user "$username" "$groups":` Calls the create_user function with the username and groups as arguments.
+-	`done < "$1":` The done keyword ends the while loop. $1 represents the first argument passed to the script, which should be the path to the input file.
+-	`log_message "User creation process completed.":` Logs a message indicating the user creation process is complete.
+-	`echo "User creation process completed. Check $LOG_FILE for details.":` Prints a message to the console indicating completion and directing the user to the log file for details.
 
 __Conclusion__
 
